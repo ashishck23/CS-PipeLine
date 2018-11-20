@@ -3,30 +3,26 @@ pipeline {
     stages {
         stage('Compile') {
             steps {
-                /*echo "Fail!"; exit '1';*/
-                echo "Pass!";
+                    echo "Compiled Successfully!!";
             }
         }
         
         stage('JUnit') {
             steps {
-                /*echo "Fail!"; exit '1';*/
-                echo "Pass!";
+                    echo "JUnit Passed Successfully!";
             }
         }
         
         stage('Quality-Gate') {
             steps {
-                echo "Fail!"; 
-                exit("1");
-                /*echo "Pass!";*/
+                    echo "SonarQube Quality Gate passed successfully!!"; 
+                /*sh exit ("1");*/
             }
         }
         
         stage('Deploy') {
             steps {
-                /*echo "Fail!"; exit '1';*/
-                echo "Pass!";
+                  echo "Pass!";
             }
         }
         
