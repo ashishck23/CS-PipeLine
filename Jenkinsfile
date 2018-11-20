@@ -17,7 +17,7 @@ pipeline {
         
         stage('Quality-Gate') {
             steps {
-                echo "Fail!"; exit '1';
+                echo "Fail!"; exit('1');
                 /*echo "Pass!";*/
             }
         }
