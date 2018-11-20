@@ -1,12 +1,34 @@
 pipeline {
     agent any
     stages {
-        stage('Test') {
+        stage('Compile') {
             steps {
                 /*echo "Fail!"; exit '1';*/
                 echo "Pass!";
             }
         }
+        
+        stage('JUnit') {
+            steps {
+                /*echo "Fail!"; exit '1';*/
+                echo "Pass!";
+            }
+        }
+        
+        stage('Quality-Gate') {
+            steps {
+                /*echo "Fail!"; exit '1';*/
+                echo "Pass!";
+            }
+        }
+        
+        stage('Deploy') {
+            steps {
+                /*echo "Fail!"; exit '1';*/
+                echo "Pass!";
+            }
+        }
+        
     }
     post {
         always {
